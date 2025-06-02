@@ -1,4 +1,7 @@
-<a href="{% url 'create' %}">Añadir Producto</a>
+
+{% extends 'includes/nav.html' %}
+
+{% block content %}
 
 {% for product in products %}
 
@@ -6,3 +9,5 @@
     <a href="{% url 'detail' product.pk %}">{{ product.name }}</a>
 
 {% endfor %}
+
+{% endblock %}
