@@ -5,5 +5,5 @@ from django.views.generic import ListView
 
 class ProductListView(ListView):
     model=Product 
-    templete_name="list_products.html"
+    template_name="list_products.html"
     context_object_name="products"
